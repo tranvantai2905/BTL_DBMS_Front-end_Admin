@@ -1,0 +1,68 @@
+.textHeader {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.wrapImage {
+  min-width: 80px;
+  position: relative;
+  width: 17%;
+  font-size: 100%;
+}
+
+.buttonDecreaseQuantity,
+.buttonIncreaseQuantity {
+  color: var(--primary-red);
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.buttonDecreaseQuantity {
+  margin-right: 2rem;
+}
+
+.buttonIncreaseQuantity {
+  margin-left: 2rem;
+}
+
+.buttonErase {
+  color: var(--primary-red);
+  background-color: #fff;
+  border: none;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-left: 50px;
+  font-size: 1.1rem;
+}
+
+.buttonConfirm {
+  padding: 15px 50px;
+  border: none;
+  background-color: var(--primary-red);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.buttonIncreaseQuantity:hover,
+.buttonDecreaseQuantity:hover,
+.buttonErase:hover,
+.buttonConfirm:hover {
+  background-color: var(--primary-red);
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttonConfirm:hover {
+  opacity: 0.9;
+}

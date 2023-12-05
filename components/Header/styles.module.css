@@ -1,0 +1,126 @@
+.headerContainer {
+  background-color: var(--header-color);
+  /* background-color: #999; */
+  padding: 0px 40px;
+  height: var(--height-topBar);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  box-shadow: 2px 0px 8px 2px #99999999;
+}
+
+.headerLeft__link__item {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.headerLeft__item {
+  padding-left: 0;
+  margin-right: 15px;
+  height: 100%;
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.headerLeft__item:hover {
+  color: #941013;
+}
+
+.headerLeft__link__item__production {
+  position: relative;
+  z-index: 2;
+  position: relative;
+}
+
+.headerLeft__link__item__production::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+
+.headerLeft__link__item__production:hover
+  .headerLeft__link__item__production__list {
+  display: block;
+}
+
+.headerLeft__link__item__production__list {
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 200px;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  box-shadow: 10px 10px 8px #888888;
+  transition: all 1s ease;
+}
+
+.headerLeft__link__item__production__child {
+  margin-left: 15px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.headerLeft__link__item__production__child > span {
+  border-bottom: 2px solid #fff;
+  transition: border-bottom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.headerLeft__link__item__production__child > span:hover {
+  border-bottom: 2px solid #000;
+  animation-name: leftToRight;
+  animation-duration: 1s;
+}
+
+@keyframes leftToRight {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70px;
+  }
+}
+
+.headerLeft__link__item__production__child:hover {
+  cursor: pointer;
+}
+
+.headerCenter {
+  /* margin-left: -10rem; */
+}
+
+.headerRight {
+  margin-left: 6rem;
+}
+
+.headerRight__item {
+  margin-right: 20px;
+}
+
+@media only screen and (min-width: 1400px) {
+  /* CSS rules for screens with a maximum width of 1024px (laptop screens) */
+  .headerCenter {
+    margin-left: -12rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* CSS rules for screens with a maximum width of 1024px (laptop screens) */
+  .headerContainer {
+    padding: 0px;
+  }
+}

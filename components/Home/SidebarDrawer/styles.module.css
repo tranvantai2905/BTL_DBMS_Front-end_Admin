@@ -1,0 +1,16 @@
+.headerLeft__item {
+  padding-left: 0;
+  margin-right: 15px;
+  height: 100%;
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.textNavigate {
+  color: #000;
+  text-decoration: none;
+}

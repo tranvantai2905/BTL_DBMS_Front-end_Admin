@@ -1,0 +1,48 @@
+.wrapperPopup {
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapInput {
+  width: 100%;
+  border-bottom: 1px solid #444;
+}
+
+.input {
+  border: none;
+  width: 100%;
+  padding: 30px 20px 10px 20px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.buttonLogin {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--primary-red);
+  color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+  min-width: 150px;
+}
+
+.buttonLogin:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapperPopup {
+    margin: 0 30%;
+  }
+}

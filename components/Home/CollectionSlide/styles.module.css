@@ -1,0 +1,243 @@
+.right__title {
+  font-size: 30px;
+  line-height: 32px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.right__name__collection {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  max-width: 60%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 31px;
+  white-space: break-spaces;
+}
+
+.right__button {
+  text-transform: uppercase;
+  min-width: 170px;
+  height: 50px;
+  font-weight: 300;
+  font-family: Open Sans, sans-serif;
+  background-color: #fff;
+  color: #444;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+}
+
+.right__button:hover {
+  cursor: pointer;
+  background-color: var(--primary-red);
+  color: #fff;
+}
+
+.container {
+}
+
+.item {
+  width: 100%;
+  height: 740px;
+}
+
+.wrapper__item {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  /* margin: 15px; */
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* -o-object-fit: cover; */
+  object-fit: cover;
+  transform: translateZ(0);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider .slick-next {
+  right: 10px;
+}
+
+.slider .slick-prev {
+  left: 12px;
+  z-index: 5;
+}
+
+.slick-dots {
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin-bottom: 3.4rem;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 7px;
+  line-height: 20px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+
+.slick-dots :global(li.slick-active) button::before {
+  font-family: "slick";
+  font-size: 7px;
+  line-height: 20px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 1;
+  color: black !important;
+}
+
+.arrowSlickBefore {
+  position: absolute;
+  left: 0px !important;
+  top: 178px !important;
+}
+
+.arrowSlickNext {
+  position: absolute;
+  right: -50%;
+  top: 50% !important;
+}
+.arrowSlickNext::before {
+  width: 100%;
+  height: 100%;
+  content: "" !important;
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 1;
+  opacity: 1;
+  right: 0.1rem;
+  z-index: 10;
+  transform: translateX(-50%);
+  color: #fff !important;
+  scale: 2;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23fff" d="M176 465.9c-8.1 0-16.3-3.1-22.6-9.4-12.5-12.5-12.5-32.8 0-45.3L338.4 256 153.4 81.8c-12.5-12.5-12.5-32.8 0-45.3 12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192C192.3 462.8 184.1 465.9 176 465.9z"/></svg>');
+}
+
+.arrowSlickBefore::before {
+  width: 100%;
+  height: 100%;
+  content: "" !important;
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 1;
+  opacity: 1;
+  right: 0.1rem;
+  z-index: 10;
+  transform: translateX(-50%);
+  color: #fff !important;
+  background-image: url("");
+}
+
+@media only screen and (max-width: 990px) {
+  /* CSS rules for screens with a maximum width of 1024px (laptop screens) */
+  .headerContainer {
+    padding: 0px;
+  }
+
+  .arrowSlickNext {
+    position: absolute;
+    right: 50% !important;
+    top: 50% !important;
+  }
+
+  .arrowSlickNext::before {
+    width: 100%;
+    height: 100%;
+    content: "" !important;
+    display: block;
+    position: absolute;
+    background-size: contain;
+    background-position: 50%;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 1;
+    opacity: 1;
+    right: 0.1rem;
+    z-index: 10;
+    transform: translateX(-50%);
+    color: #fff !important;
+    scale: 2;
+    background-image: url("") !important;
+  }
+}

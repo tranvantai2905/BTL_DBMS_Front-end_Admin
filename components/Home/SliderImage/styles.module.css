@@ -1,0 +1,134 @@
+.container {
+  /* overflow: hidden; */
+  margin-top: var(--height-topBar);
+}
+
+.item {
+}
+
+.wrapper__item {
+  height: 90vh;
+  position: relative;
+}
+
+.image {
+  height: 100%; /* set the height of the image to 100% */
+  width: 100%; /* set the width of the image to auto, so it scales proportionally */
+  position: absolute; /* set the position property to absolute */
+  top: 0; /* position the image at the top of the div */
+  left: 0; /* position the image at the left of the div */
+  bottom: 0;
+  right: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider .slick-next {
+  right: 10px;
+}
+
+.slider .slick-prev {
+  left: 12px;
+  z-index: 5;
+}
+
+.slick-dots {
+  position: absolute;
+  display: block;
+  /* text-align: center; */
+  /* left: 50%;
+    transform: translate(0, -50%); */
+  text-align: center;
+  bottom: 1rem;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+
+.slick-dots :global(li.slick-active) button::before {
+  font-family: "slick";
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 1;
+  color: black !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .slick-dots li button:before {
+    font-family: "slick";
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: grey;
+  }
+
+  .slick-dots :global(li.slick-active) button::before {
+    font-family: "slick";
+    font-size: 12px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 1;
+    color: grey !important;
+  }
+}

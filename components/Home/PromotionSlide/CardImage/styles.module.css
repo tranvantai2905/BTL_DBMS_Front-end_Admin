@@ -1,0 +1,36 @@
+.wrapper__item {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  /* margin: 15px; */
+  width: 211px;
+  height: 325px;
+  width: 100%;
+}
+
+.image {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+.name {
+  display: -webkit-box;
+  overflow: hidden;
+  font-weight: 300;
+  text-align: left;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  color: #818181;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 8px;
+  -webkit-line-clamp: 1;
+}
+
+.price {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000;
+}

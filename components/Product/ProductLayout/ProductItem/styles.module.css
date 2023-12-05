@@ -1,0 +1,31 @@
+.wrapImage {
+  min-width: 80px;
+  position: relative;
+  width: 17%;
+  font-size: 100%;
+}
+
+.button {
+  color: var(--primary-red);
+  background-color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-right: 50px;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--primary-red);
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapImage {
+    display: none;
+  }
+}

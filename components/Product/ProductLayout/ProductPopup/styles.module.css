@@ -1,0 +1,57 @@
+.button {
+  color: var(--primary-red);
+  background-color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  min-width: 120px;
+}
+
+.button:hover {
+  background-color: var(--primary-red);
+  color: #fff;
+  cursor: pointer;
+}
+
+.wrapForm {
+  width: 40rem !important;
+  text-transform: capitalize;
+}
+
+.wrapperPopup {
+  transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wrapInput {
+  width: 100%;
+  border-bottom: 1px solid #444;
+}
+
+.input {
+  border: none;
+  width: 100%;
+  padding: 30px 20px 10px 20px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.option {
+  padding: 5px 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapperPopup {
+    margin: 0 30%;
+  }
+}

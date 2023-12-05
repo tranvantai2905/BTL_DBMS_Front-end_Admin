@@ -1,0 +1,22 @@
+.title {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 27px;
+  white-space: pre-line;
+  margin-bottom: 15px;
+  font-family: Open Sans, sans-serif;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 300;
+}
