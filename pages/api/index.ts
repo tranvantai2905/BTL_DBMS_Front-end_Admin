@@ -133,7 +133,7 @@ export const deleteSpecificProduct = async (id: any) => {
 
 export const getOrderById = async (id: any) => {
   try {
-    const response = await API.get(`/api/order/${id}`);
+    const response = await API.get(`/order/${id}`);
     return response;
   } catch (error) {
     return (error as AxiosError).response;
@@ -143,7 +143,7 @@ export const getOrderById = async (id: any) => {
 export const getOrders = async (limit: any = 10, page: any = 1) => {
   try {
     const response = await API.get(
-      `/orders?limit=${limit}&frame=${page}`
+      `/orders?orderBy=ASC&limit=${limit}&page=${page}`
     );
     return response;
   } catch (error) {
@@ -153,7 +153,7 @@ export const getOrders = async (limit: any = 10, page: any = 1) => {
 
 export const updateStatusOrder = async (status: string, orderId: string) => {
   try {
-    const response = await API.put("api/order/update-status", {
+    const response = await API.put("/order/status", {
       status,
       orderId,
     });

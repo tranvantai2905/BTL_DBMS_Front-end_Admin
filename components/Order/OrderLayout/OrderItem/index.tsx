@@ -31,7 +31,7 @@ const OrderItem: React.FC<Props> = ({ order, reload, setReload }) => {
 
   const fetchData = async () => {
     const response = await getOrderById(order?.orderId);
-    setListProduct(response?.data.data.products);
+    setListProduct(response?.data.data.order.productsinorders);
   };
 
   useEffect(() => {
