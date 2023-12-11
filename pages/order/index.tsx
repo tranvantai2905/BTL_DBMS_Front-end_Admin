@@ -37,7 +37,7 @@ export default function Order() {
           >
             Đơn Hàng
           </Typography>
-          {orderData ? (
+          {orderData.length >= 1 ? (
             <OrderLayout
               limit={limit}
               page={page}

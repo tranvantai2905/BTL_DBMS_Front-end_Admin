@@ -1,20 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 :root {
   --header-color: #fff;
   --height-topBar: 85px;
   --primary-red: #9f1110;
+  --secondary-red: #ad2526;
 }
 
 * {
+  font-family: "Open Sans", sans-serif !important;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: Open Sans, sans-serif;
+}
+
+.container {
+  margin-top: var(--height-topBar);
+  margin-right: 6%;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.container {
-  margin: 0 6%;
-  margin-top: var(--height-topBar);
 }

@@ -124,7 +124,7 @@ export const updateSpecificProduct = async (productId:string, formData: FormData
 
 export const deleteSpecificProduct = async (id: any) => {
   try {
-    const response = await API.delete(`api/product/${id}`);
+    const response = await API.delete(`/product/${id}`);
     return response;
   } catch (error) {
     return (error as AxiosError).response;
